@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 34-SBMS_API-Cloud-Config_Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RakeshSahu12/configuration_properties.git 
+server:
+  port: 9093
+  
+ 
