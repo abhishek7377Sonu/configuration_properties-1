@@ -1,7 +1,10 @@
-spring:
-  application:
-    name: Welcome
-  config:
-    import: optional:configserver:http://localhost:9093  
 server:
-  port: 8087
+  port: 9090
+spring:
+  config:
+    import: optional:configserver:http://localhost:8080
+  application:
+    name: welcome
+  cloud:
+    config:
+      uri: http://localhost:8080
