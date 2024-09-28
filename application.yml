@@ -1,12 +1,7 @@
 spring:
   application:
-    name: 34-SBMS_API-Cloud-Config_Server
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/RakeshSahu12/configuration_properties.git 
+    name: Welcome
+  config:
+    import: optional:configserver:http://localhost:9093  
 server:
-  port: 9093
-  
- 
+  port: 8087
